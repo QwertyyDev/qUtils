@@ -1,10 +1,8 @@
-# GlyphUtils
+# qUtils
 
-**GlyphUtils** is a Minecraft utility plugin that provides several powerful **text tools** through a simple command and interactive GUI menus. The plugin allows authorized players to quickly generate formatted text, gradients, and special symbols directly inside the game.
+**qUtils** is a Minecraft utility plugin that provides several powerful **text tools** through a simple command and interactive GUI menus. The plugin allows authorized players to quickly generate formatted text, gradients, and special symbols directly inside the game.
 
 The goal of GlyphUtils is to make text formatting easy for server staff. Instead of using websites or manually writing formatting codes, everything can be done in-game with a few clicks.
-
----
 
 ## MAIN COMMAND
 
@@ -19,8 +17,6 @@ From this menu you can access every available tool in the plugin.
 glyphutils.use
 
 Players without this permission cannot use the command.
-
----
 
 ## MAIN MENU
 
@@ -62,8 +58,6 @@ Input: Hello Server
 
 Output: ʜᴇʟʟᴏ sᴇʀᴠᴇʀ
 
----
-
 ## GRADIENT MAKER
 
 The **Gradient Maker** allows you to generate gradient colored text between two colors.
@@ -89,8 +83,6 @@ Instead of manually creating color codes, the plugin calculates the transition a
 
 The final formatted message is sent to chat so it can be copied and used anywhere.
 
----
-
 ## TEXT STYLE OPTIONS
 
 Inside the Gradient Maker tool you can also enable extra formatting options.
@@ -104,13 +96,9 @@ Available style toggles:
 
 When enabled, the plugin automatically applies these styles to the generated gradient text.
 
-This allows you to create complex formatted messages without manually writing formatting codes.
-
----
-
 ## EMOJI AND SYMBOL COPIER
 
-GlyphUtils also includes a **large symbol library** that allows you to copy special characters directly from a GUI.
+qUtils also includes a **large symbol library** that allows you to copy special characters directly from a GUI.
 
 Instead of searching online for symbols, you can simply open the menu and click the symbol you want.
 
@@ -129,31 +117,3 @@ The symbol is sent to chat so it can be copied instantly.
 **Arrows and direction icons**
 **Superscript characters**
 **Subscript characters**
-
-Symbols are organized across multiple GUI pages so they remain easy to browse.
-
----
-
-## PERMISSIONS
-
-glyphutils.use
-
-Allows a player to use the **/utils** command and access the plugin tools.
-
-This makes it possible to restrict the plugin to **staff members only**.
-
----
-
-## SERVER COMPATIBILITY
-
-GlyphUtils works with modern Minecraft servers running:
-
-Spigot
-Paper
-Purpur
-
----
-
-## AUTHOR
-
-Developer: **Qwertydev**
