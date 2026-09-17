@@ -1,119 +1,78 @@
-# qUtils
+![qUtils](https://cdn.modrinth.com/data/cached_images/96b30d613fa39d4687b703393e5795e928688dba.png)
 
-**qUtils** is a Minecraft utility plugin that provides several powerful **text tools** through a simple command and interactive GUI menus. The plugin allows authorized players to quickly generate formatted text, gradients, and special symbols directly inside the game.
+ <div align="center">
+  <a href="https://github.com/QwertyyDev/qUtils">
+    <img src="https://cdn.modrinth.com/data/cached_images/b6b08e634ac21529fb61b12fc4ff436290a42d0f.png" alt="Github" width="100">
+  </a> 
+  <a href="https://modrinth.com/plugin/qutils">
+    <img src="https://cdn.modrinth.com/data/cached_images/0f76ddbf67c6103e8265d521ccd6ec9aff6e0dae.png" alt="Modrinth" width="100">
+  </a> 
+  <a href="https://discord.gg/aQTWMEMwC9">
+    <img src="https://cdn.modrinth.com/data/cached_images/b5c430507784e3ae83d35c6ec72e2fd84647ec99.png" alt="Discord" width="100">
+  </a>
+</div>
 
-The goal of GlyphUtils is to make text formatting easy for server staff. Instead of using websites or manually writing formatting codes, everything can be done in-game with a few clicks.
+A utility plugin that brings text formatting tools to your server staff through a single GUI, accessed with the **/utils** command. No websites, no manual color codes — everything happens in-game.
 
-## MAIN COMMAND
+<center>
 
-**/utils**
+![Features](https://cdn.modrinth.com/data/cached_images/7e70a283aa34a3806f7dbe73f957643a857fe398_0.webp)
 
-Opens the main GlyphUtils menu.
+</center>
 
-From this menu you can access every available tool in the plugin.
+**Small Caps Converter**
 
-**Required permission**
+Converts regular text into small caps unicode characters. Useful for announcements, scoreboard titles, and hologram text.
 
-glyphutils.use
+- Type your text in chat and get an instant conversion
+- Click the result to copy it
 
-Players without this permission cannot use the command.
+**Gradient Maker**
 
-## MAIN MENU
+Generates two-color gradient text with HEX support, plus toggleable bold, italic, underline, and strikethrough styling.
 
-When the **/utils** command is executed, the main toolbox menu opens.
+- Pick your first and second color from an in-game color palette
+- Combine the gradient with any text style toggle
+- Result is sent to chat, ready to copy
 
-The menu contains different tools such as:
+**Emoji and Symbol Copier**
 
-Small Caps Converter
-Gradient Maker
-Emoji and Symbol Copier
+A symbol library covering decorative, weather, music, gaming, geometric, arrow, superscript, and subscript characters.
 
-Each tool opens its own interface where you can interact with it easily.
+- Browse by category directly from the GUI
+- Click a symbol to send it straight to chat
 
----
+<center>
 
-## SMALL CAPS CONVERTER
+![Permissions](https://cdn.modrinth.com/data/cached_images/3286421d59bf3e5f1fe5608ddb2246df34024a91_0.webp)
 
-The **Small Caps Converter** allows you to transform normal text into small caps Unicode characters.
+</center>
 
-This tool is commonly used for:
+| Permission | Description | Default |
+|---|---|---|
+| `qutils.use` | Allows access to the **/utils** command | op |
 
-**Server announcements**
-**Scoreboard titles**
-**Menu titles**
-**Hologram text**
-**Decorative chat messages**
+<center>
 
-### How to use
+![Configuration](https://cdn.modrinth.com/data/cached_images/430ce407db153d584c42ed7bc5978d62da526f54_0.webp)
 
-1. Run **/utils**
-2. Click **Small Caps Converter**
-3. Enter the text you want to convert
-4. The plugin converts the text automatically
-5. The result is sent to chat so you can copy it
+</center>
 
-### Example
+The plugin ships with a `config.yml` for customizing prefixes and in-game messages:
 
-Input: Hello Server
-
-Output: ʜᴇʟʟᴏ sᴇʀᴠᴇʀ
-
-## GRADIENT MAKER
-
-The **Gradient Maker** allows you to generate gradient colored text between two colors.
-
-Instead of manually creating color codes, the plugin calculates the transition and generates the formatted output automatically.
-
-### Features
-
-**Custom text input**
-**HEX color support**
-**Two color gradient system**
-**GUI color palette selection**
-**Automatic gradient generation**
-
-### How to use
-
-1. Run **/utils**
-2. Open **Gradient Maker**
-3. Enter the text you want to style
-4. Choose the first color
-5. Choose the second color
-6. The plugin generates the gradient text
-
-The final formatted message is sent to chat so it can be copied and used anywhere.
-
-## TEXT STYLE OPTIONS
-
-Inside the Gradient Maker tool you can also enable extra formatting options.
-
-Available style toggles:
-
-**Bold text**
-**Italic text**
-**Underline text**
-**Strikethrough text**
-
-When enabled, the plugin automatically applies these styles to the generated gradient text.
-
-## EMOJI AND SYMBOL COPIER
-
-qUtils also includes a **large symbol library** that allows you to copy special characters directly from a GUI.
-
-Instead of searching online for symbols, you can simply open the menu and click the symbol you want.
-
-When a symbol is clicked:
-
-The symbol is sent to chat so it can be copied instantly.
-
-### Symbol categories include
-
-**Decorative symbols**
-**Weather symbols**
-**Musical symbols**
-**Gaming related symbols**
-**Geometric shapes**
-**Unicode letters**
-**Arrows and direction icons**
-**Superscript characters**
-**Subscript characters**
+```yaml
+messages:
+  prefix: '&8[&bGlyph&fUtils&8]&r'
+  no-permission: '&cYou do not have permission to use this command.'
+  main-menu-title: '&8⏷ &bUtility Tools &8⏷'
+  small-caps-title: '&8⏷ &bSmall Caps &8⏷'
+  gradient-maker-title: '&8⏷ &bGradient Maker &8⏷'
+  color-palette-title: '&8⏷ &bColor Selector &8⏷'
+  symbol-copier-title: '&8⏷ &bSymbol Copier &8⏷'
+  enter-text: '&aPlease type your text in chat:'
+  text-copied: '&aCopied to chat! Use Ctrl+A to select all:'
+  conversion-complete: '&aConversion complete! Click the result to copy.'
+  gradient-generated: '&aGradient generated! Copy from chat:'
+  cancelled: '&cAction cancelled.'
+  type-cancel: '&7Type &ccancel&7 to abort.'
+```
